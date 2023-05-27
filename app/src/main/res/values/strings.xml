@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cohort</string>
+
+    <string name="hello">Hello World. I\'m here.</string>
+    <string name="afro">afro</string>
+    <string name="rest">I\'m learning Android</string>
+    <string name="click">Click Here</string>
+
+    <string name="enter_email_and_password">Enter Email and Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="mail">gmail.com</string>
+
+    <string name="sign_in">Sign In</string>
+</resources>
