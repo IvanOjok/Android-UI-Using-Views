@@ -9,7 +9,8 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,10 +20,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/nanum_myeongjo"
         android:text="@string/enter_email_and_password"
-        android:textSize="20sp"
-
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,17 +32,19 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        app:helperText="@string/mail"
+        app:suffixText="@string/mail"
+        app:startIconDrawable="@drawable/email"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="43dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ent_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableStart="@android:drawable/ic_dialog_email"
-            android:drawableTint="#000C0B"
+            android:singleLine="true"
+            android:textSize="20sp"
             android:hint="@string/enter_email" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,11 +61,14 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
             android:hint="@string/enter_password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="15dp"
